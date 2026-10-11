@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142e42">
+  <meta name="description" content="Send a consultation enquiry to Sandhu Hospital using WhatsApp. Choose a treatment category and share your preferred date and time.">
+  <title>Consultation Enquiry | Sandhu Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Sandhu Hospital home">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="brand-copy"><span class="brand-name">Sandhu Hospital</span><span class="brand-subtitle">Skin · Hair · Aesthetic Care</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true"></span></button>
+    <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Treatments</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQs</a>
+      <a class="btn btn--small" href="enquiry.html" aria-current="page">Book a Consultation <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow">A straightforward first step</p>
+        <h1>Tell us what you'd like to discuss.</h1>
+        <p>
+          Share a few practical details and prepare an enquiry for the
+          clinic on WhatsApp. You can ask questions before deciding on
+          a consultation.
+        </p>
+      </div>
+      <aside class="page-hero-note">
+        <strong>What happens next?</strong>
+        Your details will be placed into a WhatsApp message. Review it and
+        press Send in WhatsApp to deliver it to the clinic.
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container enquiry-grid">
+      <div class="reveal">
+        <p class="eyebrow">Consultation enquiry</p>
+        <h2>Let's start with the basics.</h2>
+        <p>
+          You do not need to know the exact name of a procedure. Select the
+          closest category or choose “Other / Not sure” and explain briefly.
+        </p>
+        <div class="contact-photo-wrap" style="margin-top:28px">
+          <img data-image="doctor" alt="Dr. Ravdeep Singh Sandhu"
+            width="700" height="700" loading="lazy">
+          <div class="image-placeholder" hidden>Doctor photograph unavailable.</div>
+        </div>
+        <p style="margin-top:20px;font-size:12px">
+          Phone: <a href="tel:+919608555000">+91 96085 55000</a><br>
+          WhatsApp: <a href="https://wa.me/919608555000" target="_blank" rel="noopener noreferrer">Message the clinic</a>
+        </p>
+      </div>
+
+      <div class="form-panel reveal">
+        <h2>Send an enquiry</h2>
+        <p class="form-intro">Fields marked * are required.</p>
+
+        <form id="enquiry-form">
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="fullName">Full name *</label>
+              <input id="fullName" name="fullName" type="text"
+                autocomplete="name" maxlength="100" required
+                placeholder="Enter your name">
+            </div>
+
+            <div class="field field--full">
+              <label for="phone">Phone / WhatsApp number *</label>
+              <input id="phone" name="phone" type="tel"
+                autocomplete="tel" maxlength="25" required
+                placeholder="+91">
+              <p class="field-help">Include your country code if you are outside India.</p>
+            </div>
+
+            <div class="field field--full">
+              <label for="treatment">Treatment or concern *</label>
+              <select id="treatment" name="treatment" required>
+                <option value="">Choose a category</option>
+                <option value="Acne and pimples">Acne and pimples</option>
+                <option value="Hair transplant">Hair transplant</option>
+                <option value="Scar removal">Scar removal</option>
+                <option value="Tattoo removal">Tattoo removal</option>
+                <option value="Mole removal">Mole removal</option>
+                <option value="Other / Not sure">Other / Not sure</option>
+              </select>
+              <p class="field-help">Please confirm treatment availability directly with the clinic.</p>
+            </div>
+
+            <div class="field">
+              <label for="preferredDate">Preferred date</label>
+              <input id="preferredDate" name="preferredDate" type="date">
+            </div>
+
+            <div class="field">
+              <label for="preferredTime">Preferred time</label>
+              <select id="preferredTime" name="preferredTime">
+                <option value="">No preference</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+              </select>
+            </div>
+
+            <div class="field field--full">
+              <label for="message">Optional message</label>
+              <textarea id="message" name="message" maxlength="700"
+                placeholder="Briefly describe what you would like to enquire about. Please do not include highly sensitive medical details."></textarea>
+            </div>
+          </div>
+
+          <label class="consent" for="consent">
+            <input id="consent" name="consent" type="checkbox" required>
+            <span>I understand that this form opens WhatsApp with my enquiry. I will review and send the message myself. The form does not automatically book an appointment or save my information to a clinic database. *</span>
+          </label>
+
+          <button class="btn" type="submit" style="width:100%">
+            Send Enquiry on WhatsApp <span aria-hidden="true">↗</span>
+          </button>
+
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+
+          <p class="form-footnote">
+            Please do not use this form for urgent medical concerns. Contact
+            an appropriate healthcare service for urgent assistance.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-copy"><span class="brand-name">Sandhu Hospital</span><span class="brand-subtitle">Skin · Hair · Aesthetic Care</span></span></a>
+        <p class="footer-about">Contact the clinic to confirm service availability and consultation arrangements.</p>
+      </div>
+      <div><h2 class="footer-heading">Explore</h2><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Treatments</a><a href="enquiry.html">Consultation Enquiry</a><a href="faq.html">FAQs</a><a href="contact.html">Contact</a></div></div>
+      <div><h2 class="footer-heading">Contact</h2><div class="footer-links"><a href="tel:+919608555000">+91 96085 55000</a><a href="mailto:sandhuravdeep@yahoo.co.in">Email the clinic</a><a href="https://wa.me/919608555000" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.instagram.com/drsandhuclinic/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://maps.app.goo.gl/mGq7jTttx7FKYtQCA" target="_blank" rel="noopener noreferrer">Directions</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>© <span data-current-year></span> Sandhu Hospital. All rights reserved.</p><p>Website information is not a substitute for professional medical advice.</p></div>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/919608555000" target="_blank" rel="noopener noreferrer" aria-label="Contact Sandhu Hospital on WhatsApp">WA</a>
+</body>
+</html>
