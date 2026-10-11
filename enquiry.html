@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appointment Enquiry | Sandhu Hospital</title>
+<meta name="description" content="Send an appointment enquiry to Sandhu Hospital using WhatsApp.">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head><body>
+<div class="announcement"><div class="container"><span>Sandhu Hospital · Sirhind, Punjab</span><a href="tel:+919608555000">Call +91 96085 55000 ↗</a></div></div>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html"><span class="brand-mark">+</span><span><span class="brand-name">SANDHU HOSPITAL</span><span class="brand-tag">SKIN · LASER · HAIR CARE</span></span></a>
+<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav class="nav-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a class="active" href="enquiry.html">Enquiry</a><a href="faq.html">FAQ</a><a class="btn btn-sm" href="#appointmentForm">Start an Enquiry ↗</a></nav>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Enquiry</div><span class="eyebrow">Appointments & questions</span><h1>Tell us how we can help.</h1><p>Complete the form below to prepare a message for Sandhu Hospital. You'll review it and send it through WhatsApp.</p></div></section>
+
+<section><div class="container form-shell">
+<aside class="form-aside"><span class="eyebrow" style="color:#a9d8ff">Your next step</span><h2>Let's start a conversation.</h2><p>Use this form to ask about appointment availability or a treatment category. The clinic must confirm appointments and treatment availability directly.</p>
+<div style="height:1px;background:#ffffff25;margin:25px 0"></div>
+<div class="contact-row"><div class="icon-box">☎</div><div><strong>Call the clinic</strong><p><a href="tel:+919608555000">+91 96085 55000</a></p></div></div>
+<div class="contact-row"><div class="icon-box">✉</div><div><strong>Email</strong><p><a href="mailto:sandhuravdeep@yahoo.co.in">sandhuravdeep@yahoo.co.in</a></p></div></div>
+<p class="small">Please do not send emergency requests or sensitive medical records through this form.</p>
+</aside>
+
+<form class="form-card" id="appointmentForm">
+<h2 style="font-size:29px">Appointment enquiry</h2><p>Fields marked * are required.</p>
+<div class="form-grid">
+<div class="field"><label for="patientName">Full name *</label><input id="patientName" name="name" autocomplete="name" required placeholder="Your name"></div>
+<div class="field"><label for="patientPhone">Phone number *</label><input id="patientPhone" name="phone" type="tel" autocomplete="tel" required pattern="[0-9 +()-]{8,18}" placeholder="+91..."></div>
+<div class="field full"><label for="treatment">What would you like to enquire about? *</label>
+<select id="treatment" name="treatment" required>
+<option value="">Choose a category</option>
+<option>Acne and pimples</option><option>Hair transplant</option><option>Scar removal</option><option>Tattoo removal</option><option>Mole removal</option><option>General consultation</option><option>Opening hours and location</option>
+</select></div>
+<div class="field"><label for="preferredDate">Preferred date (optional)</label><input id="preferredDate" name="date" type="date"></div>
+<div class="field"><label for="preferredTime">Preferred time (optional)</label><select id="preferredTime" name="time"><option value="">No preference</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+<div class="field full"><label for="message">Your message (optional)</label><textarea id="message" name="message" placeholder="Write a short enquiry. Avoid sharing sensitive medical details."></textarea></div>
+<div class="field full"><button type="submit" class="btn" style="width:100%">Continue to WhatsApp ↗</button></div>
+</div>
+<div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+<p class="form-note">Your details are not stored by this website. Pressing the button opens WhatsApp with a prepared message; you must review and send it yourself. This is an enquiry, not a confirmed appointment.</p>
+</form>
+</div></section>
+<section class="bg-soft"><div class="container center"><div class="section-head"><span class="eyebrow">Need another option?</span><h2>Contact us directly.</h2><p>If the form doesn't work on your device, you can call or start a WhatsApp conversation.</p></div><div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap"><a class="btn" href="https://wa.me/919608555000" target="_blank" rel="noopener">Open WhatsApp ↗</a><a class="btn btn-light" href="tel:+919608555000">Call Clinic</a></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">+</span><span><span class="brand-name" style="color:white">SANDHU HOSPITAL</span><span class="brand-tag" style="color:#c0d1df">SKIN · LASER · HAIR CARE</span></span></a><p style="margin-top:18px">Sirhind, Punjab, India.</p></div><div><h3>Explore</h3><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a></div></div><div><h3>Contact</h3><div class="footer-links"><a href="tel:+919608555000">Call</a><a href="mailto:sandhuravdeep@yahoo.co.in">Email</a><a href="https://maps.app.goo.gl/mGq7jTttx7FKYtQCA">Google Maps</a></div></div></div><div class="footer-bottom">© <span data-year></span> Sandhu Hospital. Information is general and not a substitute for medical advice.</div></div></footer>
+<div class="mobile-bar"><a class="btn btn-light" href="tel:+919608555000">☎ Call Clinic</a><a class="btn" href="https://wa.me/919608555000">WhatsApp ↗</a></div>
+</body></html>
